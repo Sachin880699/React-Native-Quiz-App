@@ -10,7 +10,8 @@ const Home =({navigation})=>{
     return(
         <View>
             
-            <Title />
+            <Title titleText="Quizzler" />
+
             <View style={styles.bannerContainer}>
                 <Image source={{uri:"https://previews.123rf.com/images/abluecup/abluecup1209/abluecup120900898/15453951-quiz-a-man-is-pushing-the-button.jpg"}}
                 style={styles.banner}
@@ -29,7 +30,7 @@ export default Home
 const styles = StyleSheet.create({
     banner:{
         height:300,
-        width:300
+        width:300,
     },
     bannerContainer:{
         justifyContent:"center",
@@ -43,12 +44,15 @@ const styles = StyleSheet.create({
         borderRadius:16,
         alignItems:"center",
         marginBottom:30,
-        marginTop:20,
-        borderRadius:10
+        borderRadius:10,
+        marginTop:"50%",
+        marginLeft:20,
+        width:"90%"
     },
     buttonText:{
         color:"white",
-        fontSize:20
+        fontSize:20,
+        
     }
     
     
